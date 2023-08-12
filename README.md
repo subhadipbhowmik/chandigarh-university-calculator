@@ -19,3 +19,6 @@ It is a Basic Website for Calculating the SGPA of Chandigarh University. Many St
 ## Demo
 
 [Check SGPA](https://cusgpa.netlify.app)
+
+## Interface
+![all-devices-black](https://github.com/subhadipbhowmik/Cu-SGPA-Calculator/assets/57017965/12e8b1fc-54ae-40e4-b5b9-07feefd31ff6)
