@@ -1,0 +1,21 @@
+# Chandigarh University SGPA Calculator
+
+It is a Basic Website for Calculating the SGPA of Chandigarh University. Many Students Face problem during calculating the SGPA score. It will help the students to Calculate their SGPA Score.
+
+## How To Use
+
+- Open Website
+- Add Subject Name [Not Mendatory]
+- Add Subject Credit Point
+- Add Your Grade
+- Tap Calculate SGPA
+
+## Tech Stack
+
+- HTML
+- CSS
+- JS
+
+## Demo
+
+[Check SGPA](https://cusgpa.netlify.app)
