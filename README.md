@@ -22,3 +22,9 @@ It is a Basic Website for Calculating the SGPA of Chandigarh University. Many St
 
 ## Interface
 ![all-devices-black](https://github.com/subhadipbhowmik/Cu-SGPA-Calculator/assets/57017965/12e8b1fc-54ae-40e4-b5b9-07feefd31ff6)
+
+## Demo Video
+
+https://github.com/subhadipbhowmik/Cu-SGPA-Calculator/assets/57017965/2c4a5c99-d3e6-48f9-960a-0b46c9ce0f34
+
+
