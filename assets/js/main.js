@@ -7,6 +7,7 @@ const tfoot = document.querySelector("#tfoot");
 const table = document.querySelector("#table");
 const calcGp = document.querySelector("#calc-gp");
 const clear = document.querySelector("#clear");
+const print = document.querySelector("#print");
 
 let gpArry = [];
 
@@ -31,6 +32,7 @@ add.addEventListener("click", () => {
     tbody.appendChild(tr);
     table.classList.remove("display-none");
     calcGp.classList.remove("display-none");
+    print.classList.remove("display-none");
     clear.classList.remove("display-none");
     gpArry.push({
       unitLoad: unitLoad.value,
