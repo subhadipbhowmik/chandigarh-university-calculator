@@ -83,6 +83,7 @@ clear.addEventListener("click", () => {
   }
 
   table.classList.add("display-none");
+  print.classList.add("display-none");
   calcGp.classList.add("display-none");
   clear.classList.add("display-none");
 });
