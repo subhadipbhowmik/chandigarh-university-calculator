@@ -48,6 +48,15 @@ add.addEventListener("click", () => {
 });
 
 calcGp.addEventListener("click", () => {
+  if (gpArry.length === 0) {
+    Swal.fire({
+      icon: "error",
+      title: "No Courses Found",
+      text: "Please add courses before calculating CGPA."
+    });
+    return; // Exit the function early
+  }
+
   let unitLoads = 0,
     productOfUnitLoadsAndGrades = 0,
     sumOfProductOfUnitLoadsAndGrades = 0;

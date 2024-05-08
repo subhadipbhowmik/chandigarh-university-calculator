@@ -96,17 +96,22 @@
             <tbody id="tbody"></tbody>
             <tfoot id="tfoot"></tfoot>
         </table>
-        <div class="row mt-3">
-            <div class="col">
-                <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calculate GP" />
-            </div>
-            <div class="col">
-                <input id="print" class="btn btn-primary display-none" type="button" value="Print Result" onclick="window.print()" />
-            </div>
-            <div class="col">
-                <input id="clear" class="btn btn-warning display-none" type="button" value="Clear" />
-            </div>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col">
+            <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calculate GP" />
         </div>
+        <div class="col">
+            <input id="print" class="btn btn-primary display-none" type="button" value="Print Result" onclick="window.print()" />
+        </div>
+    </div>
+    <div class="row mt-2"><!-- Added margin top for small screens -->
+        <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear" />
+        </div>
+    </div>
+</div>
+
     </div>
     
     <!-- footer section-->
