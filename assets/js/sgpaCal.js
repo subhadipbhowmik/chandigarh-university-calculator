@@ -17,7 +17,9 @@ add.addEventListener("click", () => {
     unitLoad.value <= 0 ||
     grade.selectedIndex === 0
   ) {
-    alert("Wrong input,check and try again");
+    // alert("Wrong input,check and try again");
+    showError();
+
   } else {
     const tr = document.createElement("tr");
     const tdCourseCode = document.createElement("td");
@@ -63,9 +65,8 @@ calcGp.addEventListener("click", () => {
 
   tdGpa = document.createElement("td");
   tdGpa.setAttribute("colspan", "2");
-  tdGpa.innerHTML = `Your SGPA is: ${(
-    sumOfProductOfUnitLoadsAndGrades / unitLoads
-  ).toFixed(2)} `;
+  const cgpa = sumOfProductOfUnitLoadsAndGrades / unitLoads;
+  tdGpa.innerHTML = `Your CGPA is: ${cgpa.toFixed(2)}`;
 
   tr.appendChild(tdTotalUnitLoad);
   tr.appendChild(tdGpa);
@@ -73,6 +74,9 @@ calcGp.addEventListener("click", () => {
     tfoot.querySelector("tr").remove();
   }
   tfoot.appendChild(tr);
+
+  // Show SweetAlert based on CGPA
+  showCGPAAlert(cgpa);
 });
 
 clear.addEventListener("click", () => {
@@ -87,3 +91,43 @@ clear.addEventListener("click", () => {
   calcGp.classList.add("display-none");
   clear.classList.add("display-none");
 });
+
+function showError(){
+  Swal.fire({
+    icon: "error",
+    title: "Enter valid input!",
+    text: "You need to enter a valid input to proceed!",
+    footer: '<a href="#">Why do I have this issue?</a>'
+  });
+}
+
+function showCGPAAlert(cgpa) {
+  let message = "";
+  let icon = "";
+
+  if (cgpa <= 0) {
+    message = "Oops! Your CGPA is invalid.";
+    icon = "error";
+  } else if (cgpa >= 1 && cgpa <= 5.99) {
+    message = "Your CGPA is average.";
+    icon = "info";
+  } else if (cgpa >= 6 && cgpa <= 6.99) {
+    message = "Your CGPA is good.";
+    icon = "success";
+  } else if (cgpa >= 7 && cgpa <= 7.99) {
+    message = "Your CGPA is awesome.";
+    icon = "success";
+  } else if (cgpa >= 8 && cgpa <= 8.99) {
+    message = "Your CGPA is superb!";
+    icon = "success";
+  } else if (cgpa >= 9 && cgpa <= 10) {
+    message = "You are a genius!";
+    icon = "success";
+  }
+
+  Swal.fire({
+    icon: icon,
+    title: "CGPA Evaluation",
+    text: message
+  });
+}
