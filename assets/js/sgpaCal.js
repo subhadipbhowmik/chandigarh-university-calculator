@@ -106,9 +106,10 @@ function showError(){
     icon: "error",
     title: "Enter valid input!",
     text: "You need to enter a valid input to proceed!",
-    footer: '<a href="#">Why do I have this issue?</a>'
+    // footer: '<a href="#">Why do I have this issue?</a>'
   });
 }
+
 
 function showCGPAAlert(cgpa) {
   let message = "";
