@@ -119,19 +119,19 @@ function showCGPAAlert(cgpa) {
     message = "Oops! Your CGPA is invalid.";
     icon = "error";
   } else if (cgpa >= 1 && cgpa <= 5.99) {
-    message = "Your CGPA is average.";
+    message = `Your CGPA is average. Your SGPA is ${cgpa.toFixed(2)}`;
     icon = "info";
   } else if (cgpa >= 6 && cgpa <= 6.99) {
-    message = "Your CGPA is good.";
+    message = `Your CGPA is good. Your SGPA is ${cgpa.toFixed(2)}`;
     icon = "success";
   } else if (cgpa >= 7 && cgpa <= 7.99) {
-    message = "Your CGPA is awesome.";
+    message = `Your CGPA is very good. Your SGPA is ${cgpa.toFixed(2)}`;
     icon = "success";
   } else if (cgpa >= 8 && cgpa <= 8.99) {
-    message = "Your CGPA is superb!";
+    message = `Your CGPA is excellent. Your SGPA is ${cgpa.toFixed(2)}`;
     icon = "success";
   } else if (cgpa >= 9 && cgpa <= 10) {
-    message = "You are a genius!";
+    message = `Your CGPA is outstanding. Your SGPA is ${cgpa.toFixed(2)}`;
     icon = "success";
   }
 
